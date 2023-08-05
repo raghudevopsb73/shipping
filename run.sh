@@ -1,4 +1,4 @@
 source /data/params
-java -jar shipping.jar
+java -jar /app/shipping.jar
 
 
