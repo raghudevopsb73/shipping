@@ -3,3 +3,11 @@ image:
 
 port: 8080
 component: shipping
+
+serviceAccount:
+  create: true
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::739561048503:role/eks-prod-ssm-pm-role
+
+PARAMETERS: "CART_ENDPOINT,roboshop.prod.shipping.cart_endpoint DB_HOST,roboshop.prod.shipping.db_host"
+
