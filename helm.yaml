@@ -9,5 +9,8 @@ serviceAccount:
   annotations:
     eks.amazonaws.com/role-arn: arn:aws:iam::739561048503:role/eks-prod-ssm-pm-role
 
-PARAMETERS: "CART_ENDPOINT,roboshop.prod.shipping.cart_endpoint DB_HOST,roboshop.prod.shipping.db_host"
+PARAMETERS: "CART_ENDPOINT,roboshop.prod.shipping.cart_endpoint DB_HOST,roboshop.prod.shipping.db_host MYSQL_ENDPOINT,roboshop.prod.shipping.db_host MYSQL_USERNAME,roboshop.prod.mysql.username MYSQL_PASSWORD,roboshop.prod.mysql.password"
+
+schemaInitContainer:
+  enabled: true
 
