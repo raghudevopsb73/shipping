@@ -14,3 +14,11 @@ PARAMETERS: "CART_ENDPOINT,roboshop.prod.shipping.cart_endpoint DB_HOST,roboshop
 schemaInitContainer:
   enabled: true
 
+resources:
+   limits:
+     cpu: 1800m
+     memory: 2548Mi
+   requests:
+     cpu: 1500m
+     memory: 2048Mi
+
