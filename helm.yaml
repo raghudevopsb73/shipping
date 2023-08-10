@@ -22,3 +22,5 @@ resources:
      cpu: 1500m
      memory: 2048Mi
 
+autoscaling:
+  targetCPUUtilizationPercentage: 30
